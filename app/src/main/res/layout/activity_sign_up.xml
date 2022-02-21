@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUp">
+    <ImageView
+        android:id="@+id/app_logo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/me"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        tools:ignore="ContentDescription" />
+
+    <EditText
+        android:id="@+id/edt_name"
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/app_logo"
+        android:layout_marginTop="10dp"
+        android:hint="@string/name"
+        android:paddingStart="13dp"
+        android:background="@drawable/edit_background"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        tools:ignore="Autofill,RtlSymmetry,TextFields" />
+    <EditText
+        android:id="@+id/edt_email"
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/edt_name"
+        android:layout_marginTop="13dp"
+        android:hint="@string/email"
+        android:paddingStart="13dp"
+        android:background="@drawable/edit_background"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:autofillHints="email"
+        tools:ignore="RtlSymmetry,TextFields" />
+
+    <EditText
+        android:id="@+id/edt_password"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/edt_email"
+        android:layout_marginTop="10dp"
+        android:hint="@string/password"
+        android:paddingLeft="13dp"
+        android:paddingRight="13dp"
+        android:background="@drawable/edit_background"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:importantForAutofill="no"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/btnSignUp"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt_password"
+        android:hint="@string/sign_up"
+        android:textColor="@color/red"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"/>
+
+</RelativeLayout>
